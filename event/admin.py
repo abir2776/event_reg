@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import EventPost, UserEventRegistration
+
+admin.site.register(EventPost)
+admin.site.register(UserEventRegistration)
