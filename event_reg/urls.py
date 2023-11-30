@@ -57,5 +57,6 @@ urlpatterns = [
     ),
     path("api/v1/auth/", include("core.rest.urls.registration")),
     path("api/v1/event/", include("event.rest.urls.event")),
+    path("api/v1/me/event/", include("core.rest.urls.event")),
     path("admin/", admin.site.urls),
 ]
